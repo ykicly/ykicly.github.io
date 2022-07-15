@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>又喝酒了 | 碎碎念集</title>
+<link rel="shortcut icon" href="https://ykicly.github.io//favicon.ico?v=1657900597987">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://ykicly.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="又喝酒了 | 碎碎念集 - Atom Feed" href="https://ykicly.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="但我只想说，我会哭都是酒精的错，而不是因为这操蛋的自己。
+耳朵好热好温暖。头有点晕，就像手柄延迟一样，但还保留意识，我想这是我的优点。
+500ml一次一瓶，喝到吐，啤酒的味道真的很难闻，白啤的那股味道稍微弱一点。喝了一半了。
+然后打游戏，继..." />
+    <meta name="keywords" content="负能" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ykicly.github.io/">
+  <img class="avatar" src="https://ykicly.github.io//images/avatar.png?v=1657900597987" alt="">
+  </a>
+  <h1 class="site-title">
+    碎碎念集
+  </h1>
+  <p class="site-description">
+    里面可能包含
+*负能**碎碎念**醉酒言论**为角色怒然大勃*等
+言论
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://ykicly.github.io/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              又喝酒了
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-07-15
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://ykicly.github.io/tag/himtnLo3L/" class="post-tag">
+                  # 负能
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>但我只想说，<strong>我会哭都是酒精的错，而不是因为这操蛋的自己</strong>。<br>
+耳朵好热好温暖。头有点晕，就像手柄延迟一样，但还保留意识，我想这是我的优点。</p>
+<p>500ml一次一瓶，喝到吐，啤酒的味道真的很难闻，白啤的那股味道稍微弱一点。喝了一半了。</p>
+<p>然后打游戏，继续推our life。一想到今后大概没有人能真正窥探并安慰自己内心，我好难过</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ykicly.github.io/post/a/">
+              <h3 class="post-title">
+                啊。
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+   Maybe i lived here
+  <a class="rss" href="https://ykicly.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
